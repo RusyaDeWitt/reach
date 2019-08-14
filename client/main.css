@@ -18,7 +18,7 @@ body {
 
 .task-container {
   float: left;
-  width: 50%;
+  width: 70%;
 }
 
 .container {
@@ -78,12 +78,17 @@ header {
   display: block;
 }
 
+.video-list-header {
+  text-align: center;
+}
+
 h1 {
   font-size: 60px;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 1em;
+  color: #42b7ca;
 }
 
 form {
@@ -174,7 +179,7 @@ header .hide-completed {
 
 .video-list{
   float: right;
-  width: 40%;
+  width: 20%;
   padding-bottom: 500px;
 }
 

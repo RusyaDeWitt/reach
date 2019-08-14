@@ -51,9 +51,6 @@ class Task extends Component {
         <button className="delete" onClick={this.deleteThisTask.bind(this)}>
           &times;
         </button>
-        <button className="delete" onClick={this.togglePrivate.bind(this)}>
-            { this.props.task.private ? 'Видно только вам' : 'Видно всем' }
-        </button>
         </div>
         {this.state.video === this.props.task._id ?
         <div>
