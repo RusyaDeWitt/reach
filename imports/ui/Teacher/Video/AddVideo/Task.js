@@ -23,16 +23,17 @@ class Task extends Component {
   }
 
   showVideo() {
-    if(this.state.video == this.props.task._id){
+    if(this.state.video === this.props.task._id){
       this.setState({
         video: null,
       });
     }
     else{
-    this.setState({
-      video: this.props.task._id,
-    });
-  }}
+      this.setState({
+        video: this.props.task._id,
+      });
+    }
+  }
 
   render() {
     // Give tasks a different className when they are checked off,
@@ -49,7 +50,6 @@ class Task extends Component {
         <button className="delete" onClick={this.deleteThisTask.bind(this)}>
           &times;
         </button>
-        <span className="glyphicon glyphicon-eye-open"></span>
         <button className="delete" onClick={this.togglePrivate.bind(this)}>
             { this.props.task.private ? 'Видно только вам' : 'Видно всем' }
         </button>
