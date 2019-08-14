@@ -137,6 +137,11 @@ header .hide-completed {
   border-radius: 4px;
   resize: vertical;
 }
+
+.player {
+  width: 100%
+}
+
 @media (max-width: 600px) {
   li {
     padding: 12px 15px;
