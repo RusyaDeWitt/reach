@@ -174,8 +174,8 @@ const TeacherMenu = () => (
             <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service2" onClick={() => window.location.href='/teacher/video/answers'}>
-            <i class="ti-light-bulb"></i>
+          <div class="service service1" onClick={() => window.location.href='/teacher/video/answers'}>
+            <i class="ti-bar-chart"></i>
             <h4>Смотреть ответы</h4>
             <p></p>
             <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>

@@ -46,7 +46,7 @@ class Task extends Component {
     return (
       <li className={taskClassName}>
         <div>
-        <button onClick={this.showVideo.bind(this)}>{this.props.task.title}</button>
+        <button onClick={this.showVideo.bind(this)} className="video-list-button">{this.props.task.title}</button>
         <button className="delete" onClick={this.deleteThisTask.bind(this)}>
           &times;
         </button>

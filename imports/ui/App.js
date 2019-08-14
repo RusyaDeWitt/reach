@@ -11,6 +11,7 @@ import TeacherAddVideo from './Teacher/Video/AddVideo/AddVideo.js';
 import TeacherShowAnswers from './Teacher/Video/Answers/ShowAnswers.js';
 
 import Parent from './Parent/Parent.js';
+import ParentMenu from './Parent/ParentMenu.js';
 
 function AppRouter() {
   return (
@@ -25,6 +26,7 @@ function AppRouter() {
       <Route exact path="/teacher/video/answers" exact component={TeacherShowAnswers} />
 
       <Route exact path="/parent/video/" component={Parent} />
+      <Route exact path="/parent" component={ParentMenu} />
     </Router>
   );
 }

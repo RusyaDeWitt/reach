@@ -161,12 +161,10 @@ class Teacher extends Component {
     return (
       <div className="container">
         <header>
-          <h1>Видео ({this.props.incompleteCount}) <Link to="/teacher/video/answers">Смотреть ответы</Link></h1>
-
-          <AccountsUIWrapper />
-
+          <h1 className="add-video-header">Добавить видео</h1>
+            <AccountsUIWrapper />
           { this.props.currentUser ?
-            <div>
+            <div className="task-container">
               <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
                 <input
                   type="text"
@@ -181,13 +179,12 @@ class Teacher extends Component {
                   placeholder="Ссылка на видео"
                 />
               </form>
-              <p>Количество вопросов:
-              <button onClick={this.removeQuestion.bind(this)}>-</button>
-              <span>{this.state.questions}</span>
-              <button onClick={this.addQuestion.bind(this)}>+</button>
+              <p className="question-paragraph">Добавить вопрос:
+              <button className="delete-button" onClick={this.removeQuestion.bind(this)}>Удалить</button>
+              <button className="add-button" onClick={this.addQuestion.bind(this)}>Добавить</button>
               </p>
               {this.state.questions >= 1 ?
-              <div>
+              <div className="task-container">
                 <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
                   <input
                     type="text"
@@ -751,10 +748,11 @@ class Teacher extends Component {
             </div> : ''
           }
         </header>
-
-        <ul>
-          {this.renderTasks()}
-        </ul>
+        <div>
+          <ul className="video-list">
+            {this.renderTasks()}
+          </ul>
+        </div>
       </div>
     );
   }

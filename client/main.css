@@ -16,15 +16,62 @@ body {
   font-size: 14px;
 }
 
+.task-container {
+  float: left;
+  width: 50%;
+}
+
 .container {
   min-height: 100%;
   background: white;
 }
 
 header {
-  background: #aab;
-  padding: 20px 15px 15px 15px;
-  position: relative;
+  text-align: left;
+  margin-right: 10px;
+  padding-left: 70px;
+  padding-top: 100px;
+}
+
+.delete-button {
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 1px 3px #cc567f;
+  -moz-box-shadow: 0px 1px 3px #cc567f;
+  box-shadow: 0px 1px 3px #cc567f;
+  font-family: Arial;
+  color: #cc5a72;
+  font-size: 20px;
+  background: #faf2f5;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.delete-button:hover {
+  background: #ebbcca;
+  text-decoration: none;
+}
+
+.add-button {
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 1px 3px #56ceba;
+  -moz-box-shadow: 0px 1px 3px #56ceba;
+  box-shadow: 0px 1px 3px #56ceba;
+  font-family: Arial;
+  color: #58ccb7;
+  font-size: 20px;
+  background: #f2fcfa;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.add-button:hover {
+  background: #bcebe3;
+  text-decoration: none
 }
 
 #login-buttons {
@@ -32,7 +79,7 @@ header {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 60px;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
@@ -45,25 +92,40 @@ form {
   position: relative;
 }
 
-.new-task input {
-  box-sizing: border-box;
-  padding: 10px 0;
-  background: transparent;
-  border: none;
-  width: 100%;
-  padding-right: 80px;
-  font-size: 1em;
+.video-list-button {
+  -webkit-border-radius: 19;
+  -moz-border-radius: 19;
+  border-radius: 19px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 60%;
+  height: 20%;
 }
 
+.new-task input {
+  width: 50%;
+  height: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.question-paragraph {
+  font-size: 30px;
+}
 .new-task input:focus{
   outline: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  background: #ddd;
-}
+
 
 .delete {
   float: right;
@@ -110,6 +172,12 @@ header .hide-completed {
   display: none;
 }
 
+.video-list{
+  float: right;
+  width: 40%;
+  padding-bottom: 500px;
+}
+
 .HomeButton {
   width: 80%;
   font-size: 200%;
@@ -129,6 +197,9 @@ header .hide-completed {
   resize: vertical;
 }
 
+a {
+  font-size: 20px;
+}
 .SubmitButton {
   width: 60%;
   font-size: 100%;
