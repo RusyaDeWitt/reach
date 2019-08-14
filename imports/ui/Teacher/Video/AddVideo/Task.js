@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
 import classnames from 'classnames';
 import { Player } from 'video-react';
+import ReactPlayer from 'react-player';
 import { Tasks } from '../../../../api/tasks.js';
 
 // Task component - represents a single todo item
@@ -57,11 +58,16 @@ class Task extends Component {
         {this.state.video === this.props.task._id ?
         <div>
           <h2>{this.props.task.title}</h2>
+          {this.props.task.url.includes("youtube.com") || this.props.task.url.includes("youtu.be") ?
+          <ReactPlayer
+            className="player"
+            controls
+            url={this.props.task.url}
+          />:
           <Player
-            playsInline
-            poster="/assets/poster.png"
+            className="player"
             src={this.props.task.url}
-          />
+          />}
           <br />
           <form>
             <span>{this.props.task.question1}</span><br />
