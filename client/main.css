@@ -110,6 +110,37 @@ header .hide-completed {
   margin-left: 5px;
 }
 
+.hidden {
+  display: none;
+}
+
+.HomeButton {
+  width: 80%;
+  font-size: 200%;
+  margin: 1%;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.NameButton {
+  width: 60%;
+  font-size: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.SubmitButton {
+  width: 60%;
+  font-size: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
 @media (max-width: 600px) {
   li {
     padding: 12px 15px;
