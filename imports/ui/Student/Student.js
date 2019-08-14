@@ -165,42 +165,42 @@ const StudentMenu = () => (
     <div className="body">
       <section>
         <h3>REACH</h3>
-        <p class="section-lead">Выберите кейс, который вам интересен</p>
-        <div class="services-grid" onClick={() => window.location.href='/student/video'}>
-          <div class="service service1">
-            <i class="ti-bar-chart"></i>
+        <p className="section-lead">Выберите кейс, который вам интересен</p>
+        <div className="services-grid">
+          <div className="service service1" onClick={() => window.location.href='/student/video'}>
+            <i className="ti-bar-chart"></i>
             <h4>Мир Кино</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service2">
-            <i class="ti-light-bulb"></i>
+          <div className="service service2">
+            <i className="ti-light-bulb"></i>
             <h4>Игротека</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service3">
-            <i class="ti-money"></i>
+          <div className="service service3">
+            <i className="ti-money"></i>
             <h4>Лаборатория новых открытий</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service3">
-            <i class="ti-money"></i>
+          <div className="service service3">
+            <i className="ti-money"></i>
             <h4>Библиотека</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
         </div>
 
-        <div class="service service3">
-          <i class="ti-money"></i>
+        <div className="service service3">
+          <i className="ti-money"></i>
           <h4>Факты, цифры , сведения</h4>
           <p></p>
-          <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+          <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
         </div>
       </section>
     </div>

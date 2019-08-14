@@ -5,11 +5,10 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Answers } from '../../../api/answers.js';
 import { Tasks } from '../../../api/tasks.js';
 
-import Task from './Task.js';
+import Task from './EachVideoRender.js';
 import AccountsUIWrapper from '../../AccountsUIWrapper.js';
 
-// App component - represents the whole app
-class Student extends Component {
+class EachVideo extends Component {
   constructor(props) {
     super(props);
 
@@ -19,6 +18,7 @@ class Student extends Component {
   }
 
   renderTasks() {
+    const { params } = this.props.match;
     let filteredTasks = this.props.tasks;
     if (this.state.hideCompleted) {
       filteredTasks = filteredTasks.filter(task => !task.checked);
@@ -26,7 +26,8 @@ class Student extends Component {
     return filteredTasks.map((task) => {
       const currentUserId = this.props.currentUser && this.props.currentUser._id;
       const showPrivateButton = task.owner === currentUserId;
-
+      console.log(params.id, task._id)
+      if (params.id == task._id){
       return (
         <Task
           key={task._id}
@@ -34,23 +35,17 @@ class Student extends Component {
           answer={this.props.answer}
           showPrivateButton={showPrivateButton}
         />
-      );
+      );}
     });
   }
 
   render() {
+    const { params } = this.props.match;
     return (
-      <div className="container">
-        <header>
-          <h1>Выберите видео ({this.props.incompleteCount})</h1>
-          <AccountsUIWrapper />
-        </header>
-
-        <div className="services-grid2">
-          {this.renderTasks()}
-        </div>
+      <div>
+        {this.renderTasks()}
       </div>
-    );
+    )
   }
 }
 
@@ -64,4 +59,4 @@ export default withTracker(() => {
     incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
     currentUser: Meteor.user(),
   };
-})(Student);
+})(EachVideo);
