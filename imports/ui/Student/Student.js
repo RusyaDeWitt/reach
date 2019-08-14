@@ -183,7 +183,7 @@ const StudentMenu = () => (
 
           <div className="service service3">
             <i className="ti-money"></i>
-            <h4>Лаборатория новых открытий</h4>
+            <h4>Лаборатория</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>

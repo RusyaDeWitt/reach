@@ -20,11 +20,6 @@ if (Meteor.isServer) {
 Meteor.methods({
   'answers.insert'(name, title, questionsNum, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10) {
 
-    // Make sure the user is logged in before inserting a answer
-    if (! this.userId) {
-      throw new Meteor.Error('not-authorized');
-    }
-
     Answers.insert({
       name,
       title,
@@ -40,8 +35,6 @@ Meteor.methods({
       answer9,
       answer10,
       createdAt: new Date(),
-      owner: this.userId,
-      username: Meteor.users.findOne(this.userId).username,
     });
   },
   'answers.remove'(answerId) {
