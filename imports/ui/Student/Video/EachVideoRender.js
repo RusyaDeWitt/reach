@@ -199,6 +199,8 @@ class EachVideoRender extends Component {
 
     // Clear form
     ReactDOM.findDOMNode(this.refs.name).value = '';
+    alert("Ответы отправлены.\nВаше имя: " + name);
+    document.location.reload(true);
     }
 
   toggleChecked() {
