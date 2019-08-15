@@ -173,28 +173,28 @@ const StudentMenu = () => (
             <i class="ti-light-bulb"></i>
             <h4>Мир Кино</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service2">
-            <i class="ti-light-bulb"></i>
+          <div className="service service2">
+            <i className="ti-light-bulb"></i>
             <h4>Игротека</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
           <div class="service service2">
             <i class="ti-light-bulb"></i>
             <h4>Лаборатория</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
           <div class="service service2">
             <i class="ti-light-bulb"></i>
             <h4>Библиотека</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
         </div>
 
@@ -202,7 +202,7 @@ const StudentMenu = () => (
           <i class="ti-light-bulb"></i>
           <h4>Факты, цифры , сведения</h4>
           <p></p>
-          <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+          <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
         </div>
       </section>
     </div>

@@ -16,15 +16,13 @@ export default class Answers extends Component {
   }
 
   render() {
-    // Give answers a different className when they are checked off,
-    // so that we can style them nicely in CSS
     const answerClassName = classnames({
       checked: this.props.answer.checked,
       private: this.props.answer.private,
     });
 
     return (
-      <li className={answerClassName}>
+      <div className="answer-container">
         <button className="delete" onClick={this.deleteThisAnswer.bind(this)}>
           &times;
         </button>
@@ -52,7 +50,7 @@ export default class Answers extends Component {
           {this.props.answer.questionsNum >= 10 ?
           <p>Ответ на вопрос 10: {this.props.answer.answer10}</p>:""}
         </span>
-      </li>
+      </div>
     );
   }
 }

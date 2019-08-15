@@ -51,7 +51,7 @@ class AnswersParent extends Component {
     return (
       <div className="container">
         <header>
-          <h1>Ответы учеников ({this.props.incompleteCount})</h1>
+          <h1 className="h1-parent">Ответы учеников</h1>
           <select onChange={this.selectVideo.bind(this)} value={this.state.selectedName}>
             <option key={0} disabled>
               Выберите имя

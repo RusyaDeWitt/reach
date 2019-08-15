@@ -54,17 +54,12 @@ class Task extends Component {
         </div>
         {this.state.video === this.props.task._id ?
         <div>
-          <h2>{this.props.task.title}</h2>
-          {this.props.task.url.includes("youtube.com") || this.props.task.url.includes("youtu.be") ?
-          <ReactPlayer
-            className="player"
-            controls
-            url={this.props.task.url}
-          />:
-          <Player
-            className="player"
-            src={this.props.task.url}
-          />}
+            <h2>{this.props.task.title}</h2>
+            <ReactPlayer
+              className="player"
+              controls
+              url={this.props.task.url}
+            />
           <br />
           <form>
             <span>{this.props.task.question1}</span><br />

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { Answers } from '../../../api/answers.js';
-import { Tasks } from '../../../api/tasks.js';
+import { Answers } from '../../../../api/answers.js';
+import { Tasks } from '../../../../api/tasks.js';
 
 import Task from './Task.js';
-import AccountsUIWrapper from '../../AccountsUIWrapper.js';
+import AccountsUIWrapper from '../../../AccountsUIWrapper.js';
 
 // App component - represents the whole app
-class Student extends Component {
+class VideoList extends Component {
   constructor(props) {
     super(props);
 
@@ -42,8 +42,7 @@ class Student extends Component {
     return (
       <div className="container">
         <header>
-          <h1 className="h1-student">Выберите видео</h1>
-          <AccountsUIWrapper />
+          <h1>Список видео</h1>
         </header>
 
         <div className="services-grid2">
@@ -64,4 +63,4 @@ export default withTracker(() => {
     incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
     currentUser: Meteor.user(),
   };
-})(Student);
+})(VideoList);

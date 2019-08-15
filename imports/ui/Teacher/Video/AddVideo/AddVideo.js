@@ -748,12 +748,6 @@ class Teacher extends Component {
             </div> : ''
           }
         </header>
-        <div>
-          <h2 className="video-list-header"> Список видео </h2>
-          <ul className="video-list">
-            {this.renderTasks()}
-          </ul>
-        </div>
       </div>
     );
   }

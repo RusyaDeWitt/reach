@@ -51,8 +51,8 @@ class AnswersTeacher extends Component {
     return (
       <div className="container">
         <header>
-          <h1>Ответы учеников ({this.props.incompleteCount})</h1>
-          <select onChange={this.selectVideo.bind(this)} value={this.state.selectedVideo}>
+          <h1>Ответы учеников</h1>
+          <select onChange={this.selectVideo.bind(this)} value={this.state.selectedVideo} >
             <option key={0} disabled>
               Выберите видео
             </option>
@@ -64,10 +64,9 @@ class AnswersTeacher extends Component {
           <AccountsUIWrapper />
 
         </header>
-
-        <ul>
+        <div>
           {this.renderAnswers()}
-        </ul>
+        </div>
       </div>
     );
   }

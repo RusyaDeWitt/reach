@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import classnames from 'classnames';
 import { Player } from 'video-react';
-import { Tasks } from '../../../api/tasks.js';
-import { Answers } from '../../../api/answers.js';
+import { Tasks } from '../../../../api/tasks.js';
+import { Answers } from '../../../../api/answers.js';
 
 // Task component - represents a single todo item
 class Task extends Component {
@@ -16,6 +16,11 @@ class Task extends Component {
       count: 0,
     }
   };
+
+
+  deleteThisTask() {
+    Meteor.call('tasks.remove', this.props.task._id);
+  }
 
   hrefto(link) {
     link = "/student/video/" + link;
@@ -31,12 +36,17 @@ class Task extends Component {
     });
 
     return (
+    <div className="video-container">
+    <button className="delete" onClick={this.deleteThisTask.bind(this)}>
+      &times;
+    </button>
       <div className="service service1" onClick={() => this.hrefto(this.props.task._id)}>
       <i className="ti-bar-chart"></i>
         <div>
-          <h4 className="h1-student">{this.props.task.title}</h4>
+          <h4>{this.props.task.title}</h4>
         </div>
       </div>
+    </div>
     );
   }
 }
