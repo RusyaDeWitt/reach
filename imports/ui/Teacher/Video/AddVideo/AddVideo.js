@@ -184,7 +184,7 @@ class Teacher extends Component {
               <button className="add-button" onClick={this.addQuestion.bind(this)}>Добавить</button>
               </p>
               {this.state.questions >= 1 ?
-              <div className="task-container">
+              <div>
                 <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
                   <input
                     type="text"
