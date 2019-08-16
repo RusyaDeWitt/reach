@@ -47,7 +47,8 @@ class AnswersParent extends Component {
   }
 
   render() {
-    const answers = this.props.answers.map ((answer) => answer.name);
+    const allAnswers = this.props.answers.map ((answer) => answer.name);
+    let answers = [...new Set(allAnswers)];
     return (
       <div className="container">
         <header>
