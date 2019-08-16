@@ -48,6 +48,17 @@ class EachVideoRender extends Component {
     // Find the text field via the React ref
     const name = ReactDOM.findDOMNode(this.refs.name).value.trim();
 
+    const question1 = this.props.task.question1;
+    const question2 = this.props.task.question2;
+    const question3 = this.props.task.question3;
+    const question4 = this.props.task.question4;
+    const question5 = this.props.task.question5;
+    const question6 = this.props.task.question6;
+    const question7 = this.props.task.question7;
+    const question8 = this.props.task.question8;
+    const question9 = this.props.task.question9;
+    const question10 = this.props.task.question10;
+
     const a1 = ReactDOM.findDOMNode(this.refs.A1).checked;
     const b1 = ReactDOM.findDOMNode(this.refs.B1).checked;
     const c1 = ReactDOM.findDOMNode(this.refs.C1).checked;
@@ -196,7 +207,7 @@ class EachVideoRender extends Component {
       answer10 = task.thirdAnswer10;
     }
 
-    Meteor.call('answers.insert', name, title, questionsNum, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10);
+    Meteor.call('answers.insert', name, title, questionsNum, question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10);
 
     // Clear form
     ReactDOM.findDOMNode(this.refs.name).value = '';
