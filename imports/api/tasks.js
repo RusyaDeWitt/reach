@@ -69,6 +69,7 @@ Meteor.methods({
       firstAnswer10,
       secondAnswer10,
       thirdAnswer10,
+      private: true,
       createdAt: new Date(),
       owner: this.userId,
       username: Meteor.users.findOne(this.userId).username,

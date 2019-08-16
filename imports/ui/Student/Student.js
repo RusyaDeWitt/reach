@@ -165,12 +165,12 @@ const StudentMenu = () => (
     <div className="body">
       <section>
         <h3>Ученик</h3>
-        <p class="section-lead">Дорогой друг!
+        <p className="section-lead">Дорогой друг!
 Мир вокруг тебя - безграничен и многолик, и твое место в нем- уникально и неповторимо. Мы предлагаем тебе вместе с нами и твоими друзьями,ровесниками,взрослыми совершить незабываемое путешествие в мир новых знаний, которые помогут тебе стать ещё лучше. Помни об одном - наш курс - это не поверка твоих знаний, полученных в школе, это - наша помощь для тебя в каждодневной жизни. Мы уверены, что наш курс EACH подскажет тебе, как правильно идти вперёд и становиться сегодня лучше, чем вчера, а завтра лучше, чем сегодня! Соревнуйся не с кем-то из своего окружения, а наблюдай за своими успехами и победами, за своим ростом! Мы - верим в тебя!</p>
-        <p class="section-lead">Выберите кейс, который вам интересен</p>
-        <div class="services-grid" onClick={() => window.location.href='/student/video'}>
-          <div class="service service2">
-            <i class="ti-light-bulb"></i>
+        <p className="section-lead">Выберите кейс, который вам интересен</p>
+        <div className="services-grid" onClick={() => window.location.href='/student/video'}>
+          <div className="service service2">
+            <i className="ti-light-bulb"></i>
             <h4>Мир Кино</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
@@ -183,23 +183,23 @@ const StudentMenu = () => (
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service2">
-            <i class="ti-light-bulb"></i>
+          <div className="service service2">
+            <i className="ti-light-bulb"></i>
             <h4>Лаборатория</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service2">
-            <i class="ti-light-bulb"></i>
+          <div className="service service2">
+            <i className="ti-light-bulb"></i>
             <h4>Библиотека</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
         </div>
 
-        <div class="service service2">
-          <i class="ti-light-bulb"></i>
+        <div className="service service2">
+          <i className="ti-light-bulb"></i>
           <h4>Факты, цифры , сведения</h4>
           <p></p>
           <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>

@@ -165,27 +165,27 @@ const TeacherMenu = () => (
     <div className="body">
       <section>
         <h3>Мир кино</h3>
-        <p class="section-lead">Выберите кейс, который вам интересен</p>
-        <div class="services-grid">
-          <div class="service service1" onClick={() => window.location.href='/teacher/video/add'}>
-            <i class="ti-bar-chart"></i>
+        <p className="section-lead">Выберите кейс, который вам интересен</p>
+        <div className="services-grid">
+          <div className="service service1" onClick={() => window.location.href='/teacher/video/add'}>
+            <i className="ti-bar-chart"></i>
             <h4>Добавить видео</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service1" onClick={() => window.location.href='/teacher/video/answers'}>
-            <i class="ti-bar-chart"></i>
+          <div className="service service1" onClick={() => window.location.href='/teacher/video/answers'}>
+            <i className="ti-bar-chart"></i>
             <h4>Смотреть ответы</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service1" onClick={() => window.location.href='/teacher/video/list'}>
-            <i class="ti-bar-chart"></i>
+          <div className="service service1" onClick={() => window.location.href='/teacher/video/list'}>
+            <i className="ti-bar-chart"></i>
             <h4>Список видео</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
         </div>
       </section>

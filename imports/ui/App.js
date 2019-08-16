@@ -10,6 +10,7 @@ import Teacher from './Teacher/Teacher.js';
 import VideoList from './Teacher/Video/VideoList/VideoList.js';
 import TeacherVideo from './Teacher/Video/TeacherVideo.js';
 import TeacherAddVideo from './Teacher/Video/AddVideo/AddVideo.js';
+import TeacherEditVideo from './Teacher/Video/EditVideo/EachVideo.js';
 import TeacherShowAnswers from './Teacher/Video/Answers/ShowAnswers.js';
 
 import Parent from './Parent/Parent.js';
@@ -27,6 +28,7 @@ function AppRouter() {
       <Route exact path="/teacher/video/" exact component={TeacherVideo} />
       <Route exact path="/teacher/video/list" exact component={VideoList} />
       <Route exact path="/teacher/video/add" exact component={TeacherAddVideo} />
+      <Route exact path="/teacher/video/edit/:id" exact component={TeacherEditVideo} />
       <Route exact path="/teacher/video/answers" exact component={TeacherShowAnswers} />
 
       <Route exact path="/parent/video/" component={Parent} />

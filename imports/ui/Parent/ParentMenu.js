@@ -165,29 +165,29 @@ const ParentMenu = () => (
     <div className="body">
       <section>
         <h3>Родитель</h3>
-        <p class="section-lead">Уважаемые родители и все взрослые! Когда-то мы все были детьми - любознательными, активными, бесстрашными, радостными. Но жизнь изменила нас и многие качества, которые были заложены в нас изначально, мы как-то растеряли. Одной из причин психологий в области исследования Человека считают тот фактор, что нам было дано много академических знаний, большая часть из которых осталась не востребованной, то есть они не стали базой для формирования жизненно необходимых навыков. За нами и с нами растут наши дети - дети Света, которые нуждаются в нас, в нашем соучастии и понимании. Приглашаем вас стать нашими самыми активными и добрыми участниками курса EACH, от которых мы ждём советов, предложений, конструктивного диалога.</p>
-        <p class="section-lead">Выберите кейс, который вам интересен</p>
-        <div class="services-grid" onClick={() => window.location.href='/parent/video'}>
-          <div class="service service3">
-            <i class="ti-money"></i>
+        <p className="section-lead">Уважаемые родители и все взрослые! Когда-то мы все были детьми - любознательными, активными, бесстрашными, радостными. Но жизнь изменила нас и многие качества, которые были заложены в нас изначально, мы как-то растеряли. Одной из причин психологий в области исследования Человека считают тот фактор, что нам было дано много академических знаний, большая часть из которых осталась не востребованной, то есть они не стали базой для формирования жизненно необходимых навыков. За нами и с нами растут наши дети - дети Света, которые нуждаются в нас, в нашем соучастии и понимании. Приглашаем вас стать нашими самыми активными и добрыми участниками курса EACH, от которых мы ждём советов, предложений, конструктивного диалога.</p>
+        <p className="section-lead">Выберите кейс, который вам интересен</p>
+        <div className="services-grid" onClick={() => window.location.href='/parent/video'}>
+          <div className="service service3">
+            <i className="ti-money"></i>
             <h4>Мир Кино</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
 
-          <div class="service service3">
-            <i class="ti-money"></i>
+          <div className="service service3">
+            <i className="ti-money"></i>
             <h4>Тренинги</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service3">
-            <i class="ti-money"></i>
+          <div className="service service3">
+            <i className="ti-money"></i>
             <h4>Библиотека</h4>
             <p></p>
-            <a href="#" class="cta">Подробней <span class="ti-angle-right"></span></a>
+            <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
         </div>
 

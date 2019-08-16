@@ -5,6 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Tasks } from '../../../../api/tasks.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Task from './Task.js';
+import { Bert } from 'meteor/themeteorchef:bert';
 import AccountsUIWrapper from '../../../AccountsUIWrapper.js';
 
 // App component - represents the whole app
@@ -22,9 +23,25 @@ class Teacher extends Component {
     event.preventDefault();
 
     // Find the text field via the React ref
+    const titlesMap = this.props.tasks.map((task) => task.title);
     const title = ReactDOM.findDOMNode(this.refs.title).value.trim();
-    const url = ReactDOM.findDOMNode(this.refs.url).value.trim();
     const questionsNum = this.state.questions;
+    const url = ReactDOM.findDOMNode(this.refs.url).value.trim();
+
+    if(titlesMap.includes(title)){
+      console.log("Видео с похожим названием уже существует");
+      Bert.alert( 'Видео с похожим названием уже существует', 'danger');
+    }
+    else if (url == ""){
+      console.log("Вы не добавили ссылку на видео")
+      Bert.alert("Вы не добавили ссылку на видео", 'danger')
+    }
+    else if (questionsNum == 0){
+      console.log("Вы не добавили вопрос(-ы)")
+      Bert.alert("Вы не добавили вопрос(-ы)", 'danger')
+    }
+    else{
+
     const question1 = ReactDOM.findDOMNode(this.refs.question1).value.trim();
     const firstAnswer1 = ReactDOM.findDOMNode(this.refs.firstAnswer1).value.trim();
     const secondAnswer1 = ReactDOM.findDOMNode(this.refs.secondAnswer1).value.trim();
@@ -67,7 +84,7 @@ class Teacher extends Component {
     const thirdAnswer10 = ReactDOM.findDOMNode(this.refs.thirdAnswer10).value.trim();
 
     Meteor.call('tasks.insert', title, url, questionsNum, question1, firstAnswer1, secondAnswer1, thirdAnswer1, question2, firstAnswer2, secondAnswer2, thirdAnswer2, question3, firstAnswer3, secondAnswer3, thirdAnswer3, question4, firstAnswer4, secondAnswer4, thirdAnswer4, question5, firstAnswer5, secondAnswer5, thirdAnswer5, question6, firstAnswer6, secondAnswer6, thirdAnswer6, question7, firstAnswer7, secondAnswer7, thirdAnswer7, question8, firstAnswer8, secondAnswer8, thirdAnswer8, question9, firstAnswer9, secondAnswer9, thirdAnswer9, question10, firstAnswer10, secondAnswer10, thirdAnswer10);
-
+    Bert.alert("Нельзя добавить менее 0 вопросов", 'danger')
     // Clear form
     ReactDOM.findDOMNode(this.refs.title).value = '';
     ReactDOM.findDOMNode(this.refs.url).value = '';
@@ -114,11 +131,13 @@ class Teacher extends Component {
     this.setState({
       questions: 0,
     });
-  }
+    Bert.alert('Видео добавлено <strong>(видно только вам)</strong>', 'success');
+  }}
 
   addQuestion() {
     if(this.state.questions >= 10){
-      console.log("Нельзя добавить более 10 вопросов")
+      console.log("Нельзя добавить более 10 вопросов");
+      Bert.alert("Нельзя добавить более 10 вопросов", 'danger');
     }
     else {
       this.setState({
@@ -129,7 +148,8 @@ class Teacher extends Component {
 
   removeQuestion() {
     if(this.state.questions <= 0){
-      console.log("Нельзя добавить менее 0 вопросов")
+      console.log("Нет вопросов для удаления")
+      Bert.alert("Нет вопросов для удаления", 'danger');
     }
     else {
       this.setState({
@@ -162,9 +182,14 @@ class Teacher extends Component {
       <div className="container">
         <header>
           <h1 className="add-video-header">Добавить видео</h1>
+
             <AccountsUIWrapper />
-          { this.props.currentUser ?
+
+            {this.props.currentUser ?
             <div className="task-container">
+              <div className="privateText">
+                <span>Видео при добавлении будет <span className="redFont">видно только вам</span>. Не забудьте поменять настройки видимости в <Link to="/teacher/video/list">списке видео</Link>. (Нажать на видео, затем на текст после названия)</span>
+              </div>
               <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
                 <input
                   type="text"
@@ -182,6 +207,7 @@ class Teacher extends Component {
               <p className="question-paragraph">Добавить вопрос:
               <button className="delete-button" onClick={this.removeQuestion.bind(this)}>Удалить</button>
               <button className="add-button" onClick={this.addQuestion.bind(this)}>Добавить</button>
+              <button className="submit-button" onClick={this.handleSubmit.bind(this)}>Отправить</button>
               </p>
               {this.state.questions >= 1 ?
               <div>

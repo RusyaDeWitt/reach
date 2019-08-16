@@ -31,7 +31,7 @@ class Task extends Component {
     });
 
     return (
-      <div className="service service1" onClick={() => this.hrefto(this.props.task._id)}>
+      <div className="service service2" onClick={() => this.hrefto(this.props.task._id)}>
       <i className="ti-bar-chart"></i>
         <div>
           <h4 className="h1-student">{this.props.task.title}</h4>

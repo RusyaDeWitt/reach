@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { Answers } from '../../../api/answers.js';
-import { Tasks } from '../../../api/tasks.js';
+import { Answers } from '../../../../api/answers.js';
+import { Tasks } from '../../../../api/tasks.js';
 
 import EachVideoRender from './EachVideoRender.js';
-import AccountsUIWrapper from '../../AccountsUIWrapper.js';
+import AccountsUIWrapper from '../../../AccountsUIWrapper.js';
 
 class EachVideo extends Component {
   constructor(props) {

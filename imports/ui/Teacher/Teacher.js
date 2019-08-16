@@ -165,40 +165,40 @@ const TeacherMenu = () => (
     <div className="body">
       <section>
         <h3>Учитель</h3>
-        <p class="section-lead">Уважаемые педагоги! Рады представить Вашему вниманию курс EACH. Он предназначен для вас независимо от того, какой вы ведёте предмет, каков Ваш опыт работы, и, самое главное, содержит готовые блоки, которые Вы можете использовать как на одном уровне целиком, так и каждый самостоятельно. Курс будет так же полезен Вам при проведении внеклассных мероприятий, родительских собраний и методический объединений. Наша цель - помочь Вам сделать учебно-воспитательный процесс ещё более увлекательным и полезным! В добрый путь!</p>
-        <p class="section-lead">Выберите кейс, который вам интересен</p>
-        <div class="services-grid" onClick={() => window.location.href='/teacher/video'}>
-          <div class="service service1">
-            <i class="ti-bar-chart"></i>
+        <p className="section-lead">Уважаемые педагоги! Рады представить Вашему вниманию курс EACH. Он предназначен для вас независимо от того, какой вы ведёте предмет, каков Ваш опыт работы, и, самое главное, содержит готовые блоки, которые Вы можете использовать как на одном уровне целиком, так и каждый самостоятельно. Курс будет так же полезен Вам при проведении внеклассных мероприятий, родительских собраний и методический объединений. Наша цель - помочь Вам сделать учебно-воспитательный процесс ещё более увлекательным и полезным! В добрый путь!</p>
+        <p className="section-lead">Выберите кейс, который вам интересен</p>
+        <div className="services-grid" onClick={() => window.location.href='/teacher/video'}>
+          <div className="service service1">
+            <i className="ti-bar-chart"></i>
             <h4>Мир Кино</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service1">
-            <i class="ti-bar-chart"></i>
+          <div className="service service1">
+            <i className="ti-bar-chart"></i>
             <h4>Игротека</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service1">
-            <i class="ti-bar-chart"></i>
+          <div className="service service1">
+            <i className="ti-bar-chart"></i>
             <h4>Тренинги</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div class="service service1">
-            <i class="ti-bar-chart"></i>
+          <div className="service service1">
+            <i className="ti-bar-chart"></i>
             <h4>Библиотека</h4>
             <p></p>
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
         </div>
 
-        <div class="service service1">
-          <i class="ti-bar-chart"></i>
+        <div className="service service1">
+          <i className="ti-bar-chart"></i>
           <h4>Факты, цифры , сведения</h4>
           <p></p>
           <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>

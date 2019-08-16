@@ -23,7 +23,7 @@ class Task extends Component {
   }
 
   hrefto(link) {
-    link = "/student/video/" + link;
+    link = "/teacher/video/edit/" + link;
     window.location.href=link
   }
 
@@ -37,11 +37,11 @@ class Task extends Component {
 
     return (
     <div className="video-container">
-    <button className="delete" onClick={this.deleteThisTask.bind(this)}>
-      &times;
-    </button>
+      <button className="delete" onClick={this.deleteThisTask.bind(this)}>
+        &times;
+      </button>
       <div className="service service1" onClick={() => this.hrefto(this.props.task._id)}>
-      <i className="ti-bar-chart"></i>
+        <i className="ti-bar-chart"></i>
         <div>
           <h4>{this.props.task.title}</h4>
         </div>

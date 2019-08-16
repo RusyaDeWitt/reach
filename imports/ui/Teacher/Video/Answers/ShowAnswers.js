@@ -47,7 +47,8 @@ class AnswersTeacher extends Component {
   }
 
   render() {
-    const answers = this.props.answers.map ((answer) => answer.title);
+    const allAnswers = this.props.answers.map ((answer) => answer.title);
+    let answers = [...new Set(allAnswers)];
     return (
       <div className="container">
         <header>
