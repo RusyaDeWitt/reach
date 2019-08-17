@@ -16,12 +16,7 @@ html {
   box-sizing: border-box;
 }
 
-.body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  background: #fff;
-  color: #999;
-}
+
 
 a {
   text-decoration: none;
@@ -161,15 +156,16 @@ h3 {
 
 const OutsetBox = () => (
   <Div>
-    <div className="body">
+  <div>
+    <div className="homepage">
       <section>
-      <h3>REACH</h3>
-      <p className="section-lead">Здравствуйте! Вас приветствует образовательно-развивающая  платформа EACH. Наш курс предлагает детям и взрослым узнать и вместе с нами познать мир навыков, которые жизненно необходимы и помогут Вам ещё больше раскрыть свой внутренний мир и познать его безграничные возможности через основы гуманитарных наук.</p>
+      <img src="https://sun9-34.userapi.com/c851532/v851532747/188d73/SWKz3KJbAwc.jpg" />
+      <p className="section-lead">Здравствуйте! Вас приветствует образовательно-развивающая  платформа REACH. Наш курс предлагает детям и взрослым узнать и вместе с нами познать мир навыков, которые жизненно необходимы и помогут Вам ещё больше раскрыть свой внутренний мир и познать его безграничные возможности через основы гуманитарных наук.</p>
       <div className="services-grid">
         <div className="service service1" onClick={() => window.location.href='/teacher'}>
           <i className="ti-bar-chart"></i>
-          <h4>Преподаватели</h4>
-          <p>Уважаемые педагоги! Рады представить Вашему вниманию курс EACH.</p>
+          <h4>Учитель</h4>
+          <p>Уважаемые педагоги! Рады представить Вашему вниманию курс REACH.</p>
           <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
         </div>
 
@@ -189,6 +185,7 @@ const OutsetBox = () => (
       </div>
     </section>
     </div>
+  </div>
   </Div>
 
 );

@@ -1,19 +1,24 @@
 /* CSS declarations go here */
 body {
   font-family: sans-serif;
-  background-color: #ffffff;
-  background-attachment: fixed;
-
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
   padding: 0;
   margin: 0;
 
   font-size: 14px;
+}
+
+.homepage::after{
+    background-image: url("https://sun9-25.userapi.com/c851532/v851532157/18c551/sN0gTLY1uoI.jpg");
+    background-repeat: no-repeat;
+    background-size: 1800px 900px;
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
 }
 
 select {
@@ -227,6 +232,10 @@ button.notPrivate {
   position: relative;
 }
 
+.container {
+
+}
+
 .redFont {
   color: red;
 }
@@ -415,6 +424,15 @@ span, a {
     padding: 12px 15px;
   }
 
+
+  .section-lead {
+    display: none;
+  }
+
+    .homepage::after {
+    background-image: none;
+  }
+
   .search {
     width: 150px;
     clear: both;
@@ -427,6 +445,14 @@ span, a {
 @media screen and (max-width: 992px){
   .video-part {
     width: 100%;
+  }
+
+  .section-lead {
+    display: none;
+  }
+
+   .homepage::after {
+    background-image: none;
   }
 
   .question-part {
