@@ -172,10 +172,15 @@ const FactsPage = () => (
           <p></p>
         </div>
 
-
         <div className="service service2" onClick={() => window.location.href='/facts/2'}>
           <i className="ti-money"></i>
-          <h4>Развитие и роль навыка общения в общей истории человечества.</h4>
+          <h4>Развитие и роль навыка общения в общей истории человечества</h4>
+          <p></p>
+        </div>
+
+        <div className="service service2" onClick={() => window.location.href='/facts/3'}>
+          <i className="ti-money"></i>
+          <h4>Развитие навыка общения в казахском обществе</h4>
           <p></p>
         </div>
       </div>

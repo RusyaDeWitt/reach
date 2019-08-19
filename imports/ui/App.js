@@ -20,6 +20,7 @@ import Training from './Parent/Training.js';
 import FactsPage from './FactsPage/FactsPage.js';
 import DombyraFact from './FactsPage/Dombyra.js';
 import RazvitieRoleFact from './FactsPage/Razvitie&role.js';
+import RazvitieNavykaFact from './FactsPage/RazvitieNavyka.js';
 
 import Lab from './Lab/Lab.js'
 import FirstTask from './Lab/FirstTask.js'
@@ -45,15 +46,15 @@ function AppRouter() {
       <Route exact path="/parent" component={ParentMenu} />
       <Route exact path="/training" component={Training} />
 
-      <Route exact path="/facts" component={FactsPage} />
-
       <Route exact path="/lab" component={Lab} />
       <Route exact path="/firsttask" component={FirstTask} />
       <Route exact path="/secondtask" component={SecondTask} />
       <Route exact path="/thirdtask" component={ThirdTask} />
 
+      <Route exact path="/facts" component={FactsPage} />
       <Route exact path="/facts/1" component={DombyraFact} />
       <Route exact path="/facts/2" component={RazvitieRoleFact} />
+      <Route exact path="/facts/3" component={RazvitieNavykaFact} />
     </Router>
   );
 }
