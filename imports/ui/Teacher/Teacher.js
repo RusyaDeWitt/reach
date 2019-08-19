@@ -167,8 +167,8 @@ const TeacherMenu = () => (
         <h3>Учитель</h3>
         <p className="section-lead">Уважаемые педагоги! Рады представить Вашему вниманию курс REACH. Он предназначен для вас независимо от того, какой вы ведёте предмет, каков Ваш опыт работы, и, самое главное, содержит готовые блоки, которые Вы можете использовать как на одном уровне целиком, так и каждый самостоятельно. Курс будет так же полезен Вам при проведении внеклассных мероприятий, родительских собраний и методический объединений. Наша цель - помочь Вам сделать учебно-воспитательный процесс ещё более увлекательным и полезным! В добрый путь!</p>
         <p className="section-lead">Выберите кейс, который вам интересен</p>
-        <div className="services-grid" onClick={() => window.location.href='/teacher/video'}>
-          <div className="service service1">
+        <div className="services-grid">
+          <div className="service service1" onClick={() => window.location.href='/teacher/video'}>
             <i className="ti-bar-chart"></i>
             <h4>Мир Кино</h4>
             <p></p>
