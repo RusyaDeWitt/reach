@@ -197,7 +197,7 @@ const TeacherMenu = () => (
           </div>
         </div>
 
-        <div className="service service1">
+        <div className="service service1" onClick={() => window.location.href='/facts'}>
           <i className="ti-bar-chart"></i>
           <h4>Факты, цифры , сведения</h4>
           <p></p>

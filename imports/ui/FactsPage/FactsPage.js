@@ -166,14 +166,14 @@ const FactsPage = () => (
       <h3>Факты</h3>
       <p className="section-lead">Выберите кейс, который вам интересен</p>
       <div className="services-grid">
-        <div className="service service4" onClick={() => window.location.href='/facts/1'}>
+        <div className="service service2" onClick={() => window.location.href='/facts/1'}>
           <i className="ti-money"></i>
           <h4>Домбыра как средство коммуникации</h4>
           <p></p>
         </div>
 
 
-        <div className="service service4" onClick={() => window.location.href='/facts/2'}>
+        <div className="service service2" onClick={() => window.location.href='/facts/2'}>
           <i className="ti-money"></i>
           <h4>Развитие и роль навыка общения в общей истории человечества.</h4>
           <p></p>
