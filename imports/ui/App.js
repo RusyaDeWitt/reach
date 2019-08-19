@@ -16,6 +16,8 @@ import TeacherShowAnswers from './Teacher/Video/Answers/ShowAnswers.js';
 import Parent from './Parent/Parent.js';
 import ParentMenu from './Parent/ParentMenu.js';
 
+import FactsPage from './FactsPage/FactsPage.js'
+
 function AppRouter() {
   return (
     <Router>
@@ -33,6 +35,8 @@ function AppRouter() {
 
       <Route exact path="/parent/video/" component={Parent} />
       <Route exact path="/parent" component={ParentMenu} />
+
+      <Route exact path="/facts" component={FactsPage} />
     </Router>
   );
 }

@@ -198,7 +198,7 @@ const StudentMenu = () => (
           </div>
         </div>
 
-        <div className="service service2">
+        <div className="service service2"  onClick={() => window.location.href='/facts'}>
           <i className="ti-light-bulb"></i>
           <h4>Факты, цифры , сведения</h4>
           <p></p>
