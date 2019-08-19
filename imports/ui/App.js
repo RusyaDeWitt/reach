@@ -18,6 +18,10 @@ import ParentMenu from './Parent/ParentMenu.js';
 
 import FactsPage from './FactsPage/FactsPage.js'
 
+import Lab from './Lab/Lab.js'
+import FirstTask from './Lab/FirstTask.js'
+import SecondTask from './Lab/SecondTask.js'
+
 function AppRouter() {
   return (
     <Router>
@@ -37,6 +41,10 @@ function AppRouter() {
       <Route exact path="/parent" component={ParentMenu} />
 
       <Route exact path="/facts" component={FactsPage} />
+
+      <Route exact path="/lab" component={Lab} />
+      <Route exact path="/firsttask" component={FirstTask} />
+      <Route exact path="/secondtask" component={SecondTask} />
     </Router>
   );
 }
