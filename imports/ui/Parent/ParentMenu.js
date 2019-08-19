@@ -176,7 +176,7 @@ const ParentMenu = () => (
           </div>
 
 
-          <div className="service service3">
+          <div className="service service3" onClick={() => window.location.href='/training'}>
             <i className="ti-money"></i>
             <h4>Тренинги</h4>
             <p></p>

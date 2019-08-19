@@ -182,7 +182,7 @@ const TeacherMenu = () => (
             <a href="#" className="cta">Подробней <span className="ti-angle-right"></span></a>
           </div>
 
-          <div className="service service1">
+          <div className="service service1" onClick={() => window.location.href='/training'}>
             <i className="ti-bar-chart"></i>
             <h4>Тренинги</h4>
             <p></p>
