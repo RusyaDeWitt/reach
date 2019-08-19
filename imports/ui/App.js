@@ -23,6 +23,7 @@ import RazvitieRoleFact from './FactsPage/Razvitie&role.js';
 import Lab from './Lab/Lab.js'
 import FirstTask from './Lab/FirstTask.js'
 import SecondTask from './Lab/SecondTask.js'
+import ThirdTask from './Lab/ThirdTask.js'
 
 function AppRouter() {
   return (
@@ -47,6 +48,7 @@ function AppRouter() {
       <Route exact path="/lab" component={Lab} />
       <Route exact path="/firsttask" component={FirstTask} />
       <Route exact path="/secondtask" component={SecondTask} />
+      <Route exact path="/thirdtask" component={ThirdTask} />
 
       <Route exact path="/facts/1" component={DombyraFact} />
       <Route exact path="/facts/2" component={RazvitieRoleFact} />
