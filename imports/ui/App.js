@@ -16,7 +16,9 @@ import TeacherShowAnswers from './Teacher/Video/Answers/ShowAnswers.js';
 import Parent from './Parent/Parent.js';
 import ParentMenu from './Parent/ParentMenu.js';
 
-import FactsPage from './FactsPage/FactsPage.js'
+import FactsPage from './FactsPage/FactsPage.js';
+import DombyraFact from './FactsPage/Dombyra.js';
+import RazvitieRoleFact from './FactsPage/Razvitie&role.js';
 
 function AppRouter() {
   return (
@@ -37,6 +39,8 @@ function AppRouter() {
       <Route exact path="/parent" component={ParentMenu} />
 
       <Route exact path="/facts" component={FactsPage} />
+      <Route exact path="/facts/1" component={DombyraFact} />
+      <Route exact path="/facts/2" component={RazvitieRoleFact} />
     </Router>
   );
 }

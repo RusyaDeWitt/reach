@@ -77,12 +77,6 @@ h3 {
   margin: 1rem 0 0.6rem;
 }
 
-.services-grid {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-}
 
 .service {
   background: #fff;
@@ -167,11 +161,26 @@ h3 {
 
 const FactsPage = () => (
   <Div>
-  <div>
-    <header className="section-lead-facts">
-      <h1 className="facts-header">Факты</h1>
-      <a href=""></a>
-    </header>
+  <div className="body">
+    <section>
+      <h3>Факты</h3>
+      <p className="section-lead">Выберите кейс, который вам интересен</p>
+      <div className="services-grid">
+        <div className="service service4" onClick={() => window.location.href='/facts/1'}>
+          <i className="ti-money"></i>
+          <h4>Домбыра как средство коммуникации</h4>
+          <p></p>
+        </div>
+
+
+        <div className="service service4" onClick={() => window.location.href='/facts/2'}>
+          <i className="ti-money"></i>
+          <h4>Развитие и роль навыка общения в общей истории человечества.</h4>
+          <p></p>
+        </div>
+      </div>
+
+    </section>
   </div>
   </Div>
 
